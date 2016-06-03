@@ -2,6 +2,7 @@ STRIP_BINARY = {
     'autocorr': False,
     'gaussian': True,
     'spikes': False,
+    'serendip': False,
 }
 
 FEATURES = {
@@ -68,6 +69,13 @@ FEATURES = {
             'rfi_found',
             'reserved',
         ),
+    'serendip':
+        (
+            'peak_power',
+            'mean_power',
+            'freq',
+            'time',
+        ),
 }
 
 GOOD_FEATURES = {
@@ -106,17 +114,24 @@ GOOD_FEATURES = {
         (
             'peak_power',
             #'mean_power',
-            #'time',
-            'ra',
-            'dec',
+            'time',
+            #'ra',
+            #'dec',
             #'q_pix',
             #'freq',
             'detection_freq',
             #'barycentric_freq',
             #'fft_len',
-            'chirp_rate',
+            #'chirp_rate',
             #'rfi_checked',
             #'rfi_found',
             #'reserved',
+        ),
+    'serendip':
+        (
+            #'peak_power',
+            #'mean_power',
+            'freq',
+            'time',
         ),
 }

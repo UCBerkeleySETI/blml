@@ -14,8 +14,11 @@ def copula_transform(xx):
 
 def main(datafile, normalize, ndims, copula, clusteroutput, subsample):
     X, features = read_sah_h5(datafile)
-    I, _ = read_sah_h5(datafile, just_good=False)
-    ids = I[:, 0]
+    I, all_features = read_sah_h5(datafile, just_good=False)
+    if 'id' in all_features:
+        ids = X[:, all_features.index('id')]
+    else:
+        ids = np.arange(len(X)).astype(int)
 
     Xorig = X
     if normalize:
@@ -31,6 +34,10 @@ def main(datafile, normalize, ndims, copula, clusteroutput, subsample):
 
     if copula:
         X = np.column_stack([copula_transform(x) for x in X.T])
+
+    # I added this for the time/freq clustering
+    # to emphasize the frequency feature
+    # X[:, 1] *= 1e-3
 
     Y = bh_sne(X, d=ndims)
 

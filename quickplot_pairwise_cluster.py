@@ -17,7 +17,10 @@ def main(datafile, feature1, feature2, clusterfile, clusterid,
     X, features = read_sah_h5(datafile, just_good=False)
     x = X[:, features.index(feature1)]
     y = X[:, features.index(feature2)]
-    ids = X[:, features.index('id')]
+    if 'id' in features:
+        ids = X[:, features.index('id')]
+    else:
+        ids = np.arange(len(X)).astype(int)
 
     include = {}
     with open(clusterfile, 'r') as f:

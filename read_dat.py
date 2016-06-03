@@ -10,13 +10,13 @@ def get_features(filename):
     dset_name = os.path.basename(filename)[2:].split('.')[0]
     return FEATURES[dset_name]
 
-def read_sah_dat(filename, just_good=True):
+def read_sah_dat(filename, just_good=True, delimiter='|'):
     dset_name = os.path.basename(filename)[2:].split('.')[0]
     with open(filename, 'r') as f:
         if STRIP_BINARY[dset_name]:
-            data = [line.strip().strip('|').split('|')[:-1] for line in f]
+            data = [line.strip().strip(delimiter).split(delimiter)[:-1] for line in f]
         else:
-            data = [line.strip().strip('|').split('|') for line in f]
+            data = [line.strip().strip(delimiter).split(delimiter) for line in f]
     X = np.array(data, dtype=float)
     if just_good:
         good = np.array([f in GOOD_FEATURES[dset_name] for f in FEATURES[dset_name]])
