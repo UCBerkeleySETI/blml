@@ -1,6 +1,7 @@
 STRIP_BINARY = {
     'autocorr': False,
     'gaussian': True,
+    'spikes': False,
 }
 
 FEATURES = {
@@ -41,26 +42,81 @@ FEATURES = {
             'chirp_rate',
             'rfi_checked',
             'rfi_found',
-            'reserved'
+            'reserved',
             'sigma',
             'chisqr',
             'null_chisqr',
             'score',
             'max_power',
-        )
+        ),
+    'spikes':
+        (
+            'id',
+            'resultid',
+            'peak_power',
+            'mean_power',
+            'time',
+            'ra',
+            'dec',
+            'q_pix',
+            'freq',
+            'detection_freq',
+            'barycentric_freq',
+            'fft_len',
+            'chirp_rate',
+            'rfi_checked',
+            'rfi_found',
+            'reserved',
+        ),
 }
 
 GOOD_FEATURES = {
     'autocorr':
         (
             'peak_power',
+            'time',#
+            'ra',#
+            'dec',#
+            'delay',
+            #'freq',
+            'detection_freq',
+            #'barycentric_freq',
+            'chirp_rate',
+        ),
+    'gaussian':
+        (
+            'peak_power',
+            #'mean_power',
             #'time',
             #'ra',
             #'dec',
-            'delay',
-            'freq',
+            #'freq',
             'detection_freq',
-            'barycentric_freq',
+            #'barycentric_freq',
+            #'fft_len',
+            #'chirp_rate',
+            #'rfi_checked',
+            #'rfi_found',
+            #'sigma',
+            #'chisqr',
+            #'null_chisqr',
+            #'max_power',
+        ),
+    'spikes':
+        (
+            'peak_power',
+            #'mean_power',
+            #'time',
+            'ra',
+            'dec',
+            #'q_pix',
+            #'freq',
+            'detection_freq',
+            #'barycentric_freq',
+            #'fft_len',
             'chirp_rate',
-        )
+            #'rfi_checked',
+            #'rfi_found',
+            #'reserved',
+        ),
 }

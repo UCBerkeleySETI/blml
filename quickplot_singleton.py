@@ -26,6 +26,7 @@ def main(datafile, feature1, bins, percentile, logscale):
 
     if logscale:
         pl.set_yscale('log')
+    pl.xlabel(feature1)
     pl.show()
 
 if __name__ == '__main__':

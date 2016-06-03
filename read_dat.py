@@ -7,7 +7,7 @@ from contextlib import closing
 from features import FEATURES, GOOD_FEATURES, STRIP_BINARY
 
 def get_features(filename):
-    dset_name = os.path.basename(filename)[2:-4]
+    dset_name = os.path.basename(filename)[2:].split('.')[0]
     return FEATURES[dset_name]
 
 def read_sah_dat(filename, just_good=True):
