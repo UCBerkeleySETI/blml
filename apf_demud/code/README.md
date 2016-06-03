@@ -3,6 +3,9 @@ Where to download DEMUD
 
 https://github.com/wkiri/DEMUD
 
+How to run on APF data
+----------------------
+
 We added a new option to DEMUD to handle APF spectra that are saved in 
 CSV format to a text file.  To use it:
 
