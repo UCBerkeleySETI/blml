@@ -14,6 +14,7 @@ from astropy.io import ascii
 
 # array to hold all output spectra
 allspec = []
+allspecdata = []
 
 # find all filterbank files in the current directory
 for fname in glob.glob("*.fil"):
@@ -29,15 +30,24 @@ for fname in glob.glob("*.fil"):
 	fil = Filterbank(fname)
 #	print fil.data.shape
 # average over 277 time samples, resulting in a 1D spectrum
+	dataline = [starname]
 	onedspec = rebin(fil.data,277,1)[0]
-	print onedspec
+# csv file lines start with the star name
+	dataline.extend(onedspec)
+#	print onedspec
 	allspec.append(onedspec)
+	allspecdata.append(dataline)
+
 
 # frequencies (from the last filterbank file)
 freqs = fil.freqs
+# csv file starts with a comment - need to manually edit output to remove the first comma after the hash
+freqsdata = ['#']
+freqsdata.extend(freqs)
 allspecnp = np.asarray(allspec)
+allspecdatanp = np.asarray(allspecdata)
 print allspecnp
 np.save("allspec.npy",allspecnp)
-ascii.write(allspecnp, 'values.dat', names=freqs,format='csv')
+ascii.write(allspecdatanp, 'genspec.csv', names=freqsdata,format='csv')
 # display the "superwaterfall"
 #imshow(allspecnp,aspect='auto',vmin=0,vmax=5e10,extent=[1501.466,1688.963,0,89])
