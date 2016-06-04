@@ -48,3 +48,5 @@ Ideas for next steps
   and frequency features.  See
 
   `$ python demud.py --featureweightmethods`
+
+Contact: Kiri Wagstaff

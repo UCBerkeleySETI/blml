@@ -60,3 +60,5 @@ Ideas for next steps
 
 * Improve (reduce) memory footprint of DEMUD for operation on large
   2D filterbank style data.
+
+Contact: Kiri Wagstaff

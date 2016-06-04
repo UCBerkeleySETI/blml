@@ -24,3 +24,5 @@ understanding of variety in the data set as it progresses.
 The directory also contains a text file called `demud.log` that contains
 the output of the DEMUD run with timing and additional details for
 each selection.
+
+Contact: Kiri Wagstaff

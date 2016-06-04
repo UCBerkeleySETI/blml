@@ -41,3 +41,5 @@ Ideas for next steps
 * Apply DEMUD to a subset of spectra that have the same rotational velocity 
   or stellar type
 * Expand data set to include more orders
+
+Contact: Kiri Wagstaff
