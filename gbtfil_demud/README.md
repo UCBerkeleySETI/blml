@@ -35,13 +35,14 @@ GBT filterbank data set section; specify `gbtdirname` and `catalogfile`).
 
    `$ python demud.py --gbtfil`
 
-This version seeds DEMUD with the first item in the data set.  It then
-iteratively selects items that most differ from each one selected.  
-By default, it runs with K=10 principal components.
+   This version seeds DEMUD with the first item in the data set.  It then
+   iteratively selects items that most differ from each one selected.  
+   By default, it runs with K=10 principal components.
 
-Currently, the data reader only uses events with detection frequencies
-within 20 MHz of 1420 MHz (see line 71 of `dataset_gbtfil.py` to modify).
-This results in 18,412 observations and requires about 30 GB of RAM to process.
+   Currently, the data reader only uses events with detection frequencies
+   within 20 MHz of 1420 MHz (see line 71 of `dataset_gbtfil.py` to modify).
+   This results in 18,412 observations and requires about 30 GB of RAM 
+   to process.
 
 4. For more interesting results, try the following:
 
