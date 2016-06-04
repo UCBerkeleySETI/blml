@@ -38,4 +38,6 @@ Ideas for next steps
 * Remove cosmic rays (shot noise)
 * Apply DEMUD to a subset of spectra that all came from the same star
   to identify unusual behavior for that star
-* Expand data set to include more ords
+* Apply DEMUD to a subset of spectra that have the same rotational velocity 
+  or stellar type
+* Expand data set to include more orders
