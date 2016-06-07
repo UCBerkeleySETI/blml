@@ -9,3 +9,4 @@ Here you can find presentations, code, and documentation from the workshop at UC
 * `gbt_demud`: Ran DEMUD novelty detection on GBT filterbank data 
   that had been converted into spectra by averaging across a 5-minute window
 * `gbtfil_demud`: Ran DEMUD novelty detection on GBT filterbank data (2D)
+* `gbt_cluster`: Re-sampled GBT data and ran clustering results on extracted features (Umaa and Jasper)
