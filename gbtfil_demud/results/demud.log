@@ -3,94 +3,94 @@ Dataset: gbtfil-k=10-dim=10000-full-init_item=mean
 No NaNs in this data file, rest easy.
 Initializing model to mean and skipping to selection 1
 
-Time elapsed at start of iteration 0/9: 27.25
-0) Selected item 5963 (Row_82.1448.437500/696), score 1.42373e+09.
+Time elapsed at start of iteration 0/9: 27.51
+0) Selected item 5963 (Row_82.1448.437500/696_1414.34838), score 1.42373e+09.
   Initial total data set reconstruction error: 1.71168e+10
   Min/max x values: 7.33e-03, 7.99e+03
   Min/max r values: 9.40e-01, 3.46e+01
   Min/max/mean residual: -13.25, 7984.84, 34.88
-    Class = Row_82.1448.437500/696
+    Class = Row_82.1448.437500/696_1414.34838
 
 
-Time elapsed at start of iteration 1/9: 49.3
-1) Selected item 11398 (Row_82.1448.437500/600), score 1.55628e+09.
+Time elapsed at start of iteration 1/9: 47.96
+1) Selected item 11398 (Row_82.1448.437500/600_1424.50339), score 1.55628e+09.
   Initial total data set reconstruction error: 2.62309e+13
   Min/max x values: 9.87e-03, 4.61e+03
   Min/max r values: 7.33e-03, 7.99e+03
   Min/max/mean residual: -7978.12, 4562.78, -16.47
-    Class = Row_82.1448.437500/600
+    Class = Row_82.1448.437500/600_1424.50339
 
 
-Time elapsed at start of iteration 2/9: 72.23
-2) Selected item 10347 (Row_82.1448.437500/752), score 3.78346e+08.
+Time elapsed at start of iteration 2/9: 68.54
+2) Selected item 10347 (Row_82.1448.437500/752_1424.39539), score 3.78346e+08.
  Total data set reconstruction error: 3.01181e+12 (of 2.62309e+13 is 11.48%)
   Min/max x values: 1.46e-02, 5.09e+03
   Min/max r values: 5.60e-02, 3.55e+03
   Min/max/mean residual: -3211.09, 4003.23, 23.34
-    Class = Row_82.1448.437500/752
+    Class = Row_82.1448.437500/752_1424.39539
 
 
-Time elapsed at start of iteration 3/9: 96.65
-3) Selected item 14153 (Row_82.1448.437500/600), score 3.56994e+08.
+Time elapsed at start of iteration 3/9: 90.48
+3) Selected item 14153 (Row_82.1448.437500/600_1424.76139), score 3.56994e+08.
  Total data set reconstruction error: 2.48914e+12 (of 2.62309e+13 is 9.49%)
   Min/max x values: 1.83e-02, 6.81e+03
   Min/max r values: 1.52e-01, 2.57e+03
   Min/max/mean residual: -2504.64, 5534.38, 1.23
-    Class = Row_82.1448.437500/600
+    Class = Row_82.1448.437500/600_1424.76139
 
 
-Time elapsed at start of iteration 4/9: 120.45
-4) Selected item 14154 (Row_82.1448.437500/648), score 2.74727e+08.
+Time elapsed at start of iteration 4/9: 112.65
+4) Selected item 14154 (Row_82.1448.437500/648_1424.76139), score 2.74727e+08.
  Total data set reconstruction error: 2.17551e+12 (of 2.62309e+13 is 8.29%)
   Min/max x values: 2.09e-02, 6.66e+03
   Min/max r values: -6.61e+01, 2.87e+03
   Min/max/mean residual: -2791.50, 6459.25, 4.63
-    Class = Row_82.1448.437500/648
+    Class = Row_82.1448.437500/648_1424.76139
 
 
-Time elapsed at start of iteration 5/9: 158.15
-5) Selected item 10345 (Row_82.1448.437500/592), score 2.0986e+08.
+Time elapsed at start of iteration 5/9: 136.19
+5) Selected item 10345 (Row_82.1448.437500/592_1424.39539), score 2.0986e+08.
  Total data set reconstruction error: 1.89116e+12 (of 2.62309e+13 is 7.21%)
   Min/max x values: 8.30e-03, 3.89e+03
   Min/max r values: -2.12e+01, 2.45e+03
   Min/max/mean residual: -2044.36, 3193.08, -3.64
-    Class = Row_82.1448.437500/592
+    Class = Row_82.1448.437500/592_1424.39539
 
 
-Time elapsed at start of iteration 6/9: 203.47
-6) Selected item 10987 (Row_82.1448.437500/648), score 1.12031e+08.
+Time elapsed at start of iteration 6/9: 161.65
+6) Selected item 10987 (Row_82.1448.437500/648_1424.46339), score 1.12031e+08.
  Total data set reconstruction error: 1.55855e+12 (of 2.62309e+13 is 5.94%)
   Min/max x values: 1.67e-02, 4.41e+03
   Min/max r values: -3.33e+01, 1.98e+03
   Min/max/mean residual: -1907.60, 4280.47, -5.90
-    Class = Row_82.1448.437500/648
+    Class = Row_82.1448.437500/648_1424.46339
 
 
-Time elapsed at start of iteration 7/9: 245.12
-7) Selected item 10795 (Row_82.1448.437500/592), score 9.91485e+07.
+Time elapsed at start of iteration 7/9: 186.26
+7) Selected item 10795 (Row_82.1448.437500/592_1424.44439), score 9.91485e+07.
  Total data set reconstruction error: 1.22372e+12 (of 2.62309e+13 is 4.67%)
   Min/max x values: 1.18e-02, 3.63e+03
   Min/max r values: -4.94e+02, 1.94e+03
   Min/max/mean residual: -1784.17, 2501.52, -10.40
-    Class = Row_82.1448.437500/592
+    Class = Row_82.1448.437500/592_1424.44439
 
 
-Time elapsed at start of iteration 8/9: 295.85
-8) Selected item 14246 (Row_82.1448.437500/584), score 7.87862e+07.
+Time elapsed at start of iteration 8/9: 210.73
+8) Selected item 14246 (Row_82.1448.437500/584_1424.76939), score 7.87862e+07.
  Total data set reconstruction error: 1.01607e+12 (of 2.62309e+13 is 3.87%)
   Min/max x values: 1.45e-02, 2.56e+03
   Min/max r values: -8.17e+01, 1.64e+03
   Min/max/mean residual: -1537.56, 2101.38, -13.01
-    Class = Row_82.1448.437500/584
+    Class = Row_82.1448.437500/584_1424.76939
 
 
-Time elapsed at start of iteration 9/9: 356.58
-9) Selected item 10346 (Row_82.1448.437500/648), score 6.61785e+07.
+Time elapsed at start of iteration 9/9: 235.02
+9) Selected item 10346 (Row_82.1448.437500/648_1424.39539), score 6.61785e+07.
  Total data set reconstruction error: 5.79684e+11 (of 2.62309e+13 is 2.21%)
   Min/max x values: 6.77e-03, 5.29e+03
   Min/max r values: -2.53e+02, 3.36e+03
   Min/max/mean residual: -909.63, 1924.47, 4.81
-    Class = Row_82.1448.437500/648
+    Class = Row_82.1448.437500/648_1424.39539
 
 
-Total elapsed processor time: 400.58
+Total elapsed processor time: 260.03
